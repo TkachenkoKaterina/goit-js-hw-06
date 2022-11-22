@@ -13,15 +13,14 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
     const div = document.createElement("div");
     divBoxesRef.append(div);
-    div.style.width = "30px";
-    div.style.height = "30px";
+    // div.style.width = "30px";
+    // console.log(div.style.width);
+    // div.style.height = "30px";
     getRandomHexColor(div);
-    // div.style.width = `"${NextSize}px"`;
+    div.style.width = `${NextSize}px`;
     console.log(`"${NextSize}px"`);
-    // div.style.height = `"${NextSize}px"`;
+    div.style.height = `${NextSize}px`;
     NextSize += 10;
-    // console.log(NextSize);
-    // console.log(div);
   }
 }
 
